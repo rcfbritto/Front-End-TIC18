@@ -4,3 +4,6 @@ Arquivos e avaliações da disciplina de Front End do programa de Residência em
 ## Semana 1
 - Instrução prática 001 (arquivo index.html)
 - Atividades realizadas em sala de aula
+
+## Semana 2
+- Instrução prática 002 (arquivo index.html e styles.css)
