@@ -2,6 +2,7 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 img{
     padding: 10px;
@@ -70,15 +71,16 @@ ul li:before {
     align-items: flex-start;
 }
 /* Adicionando estilos específicos para larguras de tela menores que 1200px */
-/*@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .container-destinos {
         flex-direction: column; 
+        align-items: center;
     }
-}*/
+}
 /* Adicionando estilos específicos para larguras de tela maiores que 1200px */
-/*@media screen and (min-width: 1201px){
+@media screen and (min-width: 1201px){
     .roteiros-viagens {
         max-width: 200px; 
         width: auto; 
     }
-}*/
+}
