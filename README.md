@@ -7,3 +7,6 @@ Arquivos e avaliações da disciplina de Front End do programa de Residência em
 
 ## Semana 2
 - Instrução prática 002 (arquivo index.html e styles.css)
+
+## Semana 3
+- Instrução prática 003 - Desenvolvimento de página web incluindo Flexbox
