@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formularioTarefas">
+        <label for="inputTarefa">Digite a tarefa:</label><br/>
+        <input type="text" id="inputTarefa" required>
+        <br/>
+        <button type="submit">Adiciona uma tarefa</button>
+    </form>
+
+    <ul id="listaTarefas"></ul>
+    <script>
+        var listaTarefas = document.getElementById('listaTarefas');
+        class tarefas{
+            constructor(nome){
+                this.nome = nome;
+            }
+            adicionaTarefaDOM(tarefa){
+                
+            }
+        } 
+        document.getElementById('formularioTarefas').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var tarefa = document.getElementById('inputTarefa').value;
+            var listItem = document.createElement('li');
+            listItem.textContent = tarefa;
+            listaTarefas.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
