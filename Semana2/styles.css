@@ -1,3 +1,4 @@
+
 header {
     background-color: blue;
     color: #fff;
@@ -9,17 +10,17 @@ header {
 h1 {
     margin: 0;
 }
-
 .conteudo-principal {
     display: grid;
     grid-template-columns: 1fr 1fr 20%;
     gap: 5px;
-    flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
 }
 .titulo-menu{
     border-bottom: 2px solid blueviolet;
+    text-align: center;
+    display: inline-block;
 }
 .caixa-menu,
 .caixa-noticias,
@@ -29,7 +30,7 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 5px;
-    margin-right: 10px;
+    text-align: center;
 }
 .caixa-imagens div{
     background-color: cornflowerblue;
@@ -37,6 +38,7 @@ h1 {
     margin-bottom: 5px;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
+    display: flex;
 }
 .caixa-menu li {
     list-style: none;
@@ -51,6 +53,7 @@ h1 {
     background-color: cornflowerblue;
     border: 1px solid black;
     margin-bottom: 5px;
+    text-align: center;
     text-align: center;
 }
 .caixa-noticias div{
@@ -74,9 +77,26 @@ h1 {
 
 .outras-caixas {
     display: grid;
-    grid-template-columns: 1fr 800px; 
+    grid-template-columns: 39.7% 1fr; 
     gap: 5px;
-    justify-content: center;
+}
+.caixa-servicos {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.caixa-resultados {
+    background-color: #ecf0f1;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.caixa-servicos p {
+   white-space: pre;
 }
 .caixa-servicos div{
     background-color: cornflowerblue;
@@ -84,26 +104,12 @@ h1 {
     text-align: center;
     margin-bottom: 5px;
 }
-.caixa-servicos {
-    background-color: #ecf0f1;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
-    text-align: justify;
-}
+
 .caixa-resultados div{
     background-color: cornflowerblue;
     border: 1px solid black;
     text-align: center;
     margin-bottom: 5px;
-}
-.caixa-resultados {
-    width: 800px;
-    background-color: #ecf0f1;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
 }
 
 footer {
@@ -112,4 +118,10 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 10px;
+}
+@media screen and (max-width: 500px) {
+    .conteudo-principal, .outras-caixas {
+        grid-template-columns: 1fr; /* Alterar para uma coluna em telas menores que 500px */
+        padding: 0 10px;
+    }
 }
