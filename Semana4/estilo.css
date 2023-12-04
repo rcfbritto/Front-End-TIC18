@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
+.container-destinos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+img {
+  width: 130px;
+  height: 90px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+ul li:before {
+  content: "✔";
+  margin-right: 5px;
+}
+
+.roteiros-viagens {
+  background-color: #d4d3f0;
+  color: #5d34bb;
+  border-radius: 8px;
+}
+.roteiro-destino {
+  font-family: "Lato";
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.roteiro-incluso {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  font-size: 14px;
+}
+
+.prec-roteiro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.descricao {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.rot-parcelado {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.roteiro-comprar {
+  display: flex;
+  border: none;
+  padding: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  color: white;
+  background-color: #90d427;
+  margin-left: 70px;
+  margin-right: 70px;
+  
+}
+.roteiro-comprar:hover {
+  background-color: #5da2d5; /* Altere para a cor desejada */
+  cursor: pointer;
+  transition-duration: 0.3s; /* Duração da transição ao passar o mouse */
+}
+
+.roteiro-comprar:active {
+  transform: scale(0.95); /* Diminui o tamanho do botão quando clicado */
+  transition: transform 0.2s ease-in-out; /* Adiciona uma animação de escala */
+}
+
+@media (max-width: 1199px) {
+  .container-destinos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
