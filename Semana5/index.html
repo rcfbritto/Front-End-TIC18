@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>UESC</title>
+</head>
+<body>
+    <header>
+        <h1>UNIVERSIDADE ESTADUAL DE SANTA CRUZ</h1>
+    </header>
+    <section class="conteudo-principal">
+        <div class="caixa-menu">
+            <div class = "título-menu">
+                <h2>Menu</h2>
+            </div>
+            <ul>
+                <li><a href="#">Estrutura Organizacional</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Graduação</a></li>
+                <li><a href="#">Pós-Graduação</a></li>
+                <li><a href="#">Extensão</a></li>
+                <li><a href="#">Servidores</a></li>
+                <li><a href="#">Fale conosco</a></li>
+            </ul>
+        </div>
+        <div class="caixa-noticias">
+            <div class = "título-noticias">
+                <h2>Notícias</h2>
+            </div>
+            <ul id="newsListContainer">            
+            </ul>
+        </div>
+        <div class="caixa-imagens">
+            <div class = "titulo-imagens">
+                <h2>Destaques</h2>
+            </div>
+            <img src="imagem1.jpg" alt="Imagem 1" width="100" height="100">
+            <img src="imagem2.jpg" alt="Imagem 2" width="100" height="100">
+        </div>
+    </section>
+
+    <section class="outras-caixas">
+        <div class = "caixa-servicos">
+            <div class="titulo-servicos">
+                <h2>Serviços</h2>
+            </div>
+            <ul id="weatherListContainer">
+                <h3>Clima</h3>
+                <li>
+                    <strong>Temperatura:</strong>
+                    <img id="weatherIcon" src="" alt="">
+                    <span id="temp"></span>
+                </li> 
+                <li>
+                    <strong>Humidade:</strong>
+                    <span id="humidity"></span>
+                </li>   
+
+                <li>
+                    <strong>Temperatura Máxima:</strong>
+                    <span id="maxTemp"></span>
+                </li>
+
+                <li>
+                    <strong>Temperatura Mínima:</strong>
+                    <span id="minTemp"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="caixa-resultados">
+            <div class = "titulo-resultados">
+                <h2>Resultados</h2>
+            </div>
+            <li>
+                <h3>Titulo 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit modi.</p>
+            </li> 
+               <li>
+                <h3>Titulo 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit modi.</p>
+            </li>   
+            </li> 
+               <li>
+                <h3>Titulo 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit modi.</p>
+            </li>  
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 UESC. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
