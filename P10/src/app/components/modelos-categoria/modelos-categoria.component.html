@@ -1,0 +1,5 @@
+<div class="container">
+  <div class="botoes mt-5">
+    <button *ngFor="let veiculo of veiculos" (click)="selecionarVeiculo(veiculo)" class="btn btn-primary">{{veiculo.Name}}</button>
+  </div>
+</div>
